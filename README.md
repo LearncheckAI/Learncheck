@@ -93,32 +93,6 @@ VITE_USER_PREFERENCES_BASE_URL=https://learncheck-dicoding-mock-666748076441.eur
 
 ---
 
-## Model ML (Machine Learning)
-
-Aplikasi ini **tidak menggunakan model ML lokal** yang perlu diunduh. Sebagai gantinya, aplikasi menggunakan **LLM berbasis cloud** melalui API:
-
-### AI Services yang Digunakan:
-
-1. **Google Gemini AI**
-
-   - Model: Gemini Pro
-   - Fungsi: Menghasilkan pertanyaan kuis dari konten tutorial
-   - Dokumentasi: [Google Generative AI](https://ai.google.dev/)
-
-2. **Groq**
-   - Model: LLaMA atau Mixtral (tergantung konfigurasi)
-   - Fungsi: Alternatif untuk generasi kuis
-   - Dokumentasi: [Groq Documentation](https://console.groq.com/docs)
-
-### Cara Kerja:
-
-1. Aplikasi mengambil konten tutorial dari Dicoding API
-2. Konten diproses dan dikirim ke LLM (Gemini/Groq) dengan prompt yang terstruktur
-3. LLM menghasilkan pertanyaan kuis dalam format JSON
-4. Hasil diparsing dan dikembalikan ke frontend untuk ditampilkan
-
----
-
 ## Cara Menjalankan Aplikasi
 
 ### Mode Development
