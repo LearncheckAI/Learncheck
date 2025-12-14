@@ -3,11 +3,11 @@
 
 ## Deskripsi Singkat Proyek
 
-**LearnCheck** adalah aplikasi web interaktif yang secara otomatis menghasilkan kuis dari konten tutorial menggunakan kecerdasan buatan (AI). Aplikasi ini memanfaatkan Large Language Models (LLM) seperti Google Gemini dan Groq untuk menganalisis materi pembelajaran dan membuat pertanyaan kuis yang relevan dan berkualitas.
+**LearnCheck** adalah aplikasi web interaktif yang secara otomatis menghasilkan kuis dari konten tutorial menggunakan kecerdasan buatan (AI). Aplikasi ini memanfaatkan Large Language Models (LLM) seperti Google Gemini untuk menganalisis materi pembelajaran dan membuat pertanyaan kuis yang relevan dan berkualitas.
 
 ### Fitur Utama:
 
-- 🤖 **Generasi Kuis Otomatis** menggunakan AI (Gemini/Groq)
+- 🤖 **Generasi Kuis Otomatis** menggunakan AI (Gemini)
 - 📚 **Integrasi dengan Dicoding API** untuk mengambil konten tutorial
 - ⚡ **Frontend Modern** dibangun dengan React + Vite
 - 🚀 **RESTful API** menggunakan Express.js
@@ -53,8 +53,6 @@ Buat file `.env` di direktori `api/` dengan konfigurasi berikut:
 ```env
 # API Keys untuk AI Services
 GEMINI_API_KEY=your_gemini_api_key_here
-GROQ_API_KEY=your_groq_api_key_here
-
 # Server Configuration
 PORT=3000
 
@@ -65,7 +63,6 @@ DICODING_API=https://learncheck-dicoding-mock-666748076441.europe-west1.run.app
 **Cara mendapatkan API Keys:**
 
 - **Gemini API Key**: Daftar di [Google AI Studio](https://makersuite.google.com/app/apikey)
-- **Groq API Key**: Daftar di [Groq Console](https://console.groq.com/)
 
 ### 3. Setup Frontend (Web)
 
@@ -177,7 +174,6 @@ Learncheck-master/
 │   │   ├── services/            # Business logic & external APIs
 │   │   │   ├── quizService.js   # Layanan generasi kuis
 │   │   │   ├── geminiService.js # Integrasi Gemini AI
-│   │   │   ├── groqService.js   # Integrasi Groq
 │   │   │   ├── llmService.js    # LLM orchestrator
 │   │   │   └── dicodingService.js # Dicoding API client
 │   │   ├── prompts/             # AI prompts
@@ -238,7 +234,6 @@ Learncheck-master/
 - **Framework**: Express.js
 - **AI Libraries**:
   - `@google/generative-ai` (Gemini)
-  - `groq-sdk` (Groq)
 - **HTTP Client**: Axios
 - **Environment**: dotenv
 
@@ -263,7 +258,7 @@ Jika port 3000 atau 5173 sudah digunakan, ubah di:
 
 ### API Key tidak valid
 
-Pastikan API key Gemini/Groq sudah benar dan masih aktif.
+Pastikan API key Gemini sudah benar dan masih aktif.
 
 ### CORS Error
 
