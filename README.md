@@ -268,21 +268,3 @@ Pastikan API key Gemini/Groq sudah benar dan masih aktif.
 ### CORS Error
 
 Pastikan backend sudah running sebelum mengakses frontend.
-
----
-
-## Lisensi
-
-ISC License
-
----
-
-## Kontribusi
-
-Kontribusi selalu diterima! Silakan buat pull request atau laporkan issue.
-
----
-
-## Kontak & Dukungan
-
-Untuk pertanyaan atau bantuan, silakan buka issue di repository ini.
