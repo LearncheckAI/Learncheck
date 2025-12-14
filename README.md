@@ -1,4 +1,4 @@
-# LearnCheck
+# Learncheck! Formative Assesment With AI (Capstone A25-CS158 Team)
 
 ## Deskripsi Singkat Proyek
 
