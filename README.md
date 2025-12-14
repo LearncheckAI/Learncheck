@@ -104,7 +104,7 @@ Buka terminal pertama dan jalankan:
 
 ```bash
 cd api
-npm run dev
+npm start
 ```
 
 **Output yang diharapkan:**
