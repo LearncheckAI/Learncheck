@@ -52,7 +52,7 @@ Buat file `.env` di direktori `api/` dengan konfigurasi berikut:
 
 ```env
 # API Keys untuk AI Services
-GEMINI_API_KEY=your_gemini_api_key_here
+GEMINI_API_KEY=API_KEY
 # Server Configuration
 PORT=3000
 
