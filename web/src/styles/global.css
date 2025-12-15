@@ -1,0 +1,296 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap");
+@import url("https://fonts.cdnfonts.com/css/open-dyslexic");
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 7px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: #475569;
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: #64748b;
+}
+
+@keyframes lc-fade-in-up {
+  0% {
+    opacity: 0;
+    transform: translateY(8px) scale(0.98);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes lc-pop-card {
+  0% {
+    opacity: 0;
+    transform: translateY(12px) scale(0.96);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes lc-soft-pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(79, 70, 229, 0.45);
+  }
+  100% {
+    box-shadow: 0 0 0 12px rgba(79, 70, 229, 0);
+  }
+}
+
+.lc-animate-fade-in-up {
+  animation: lc-fade-in-up 0.35s ease-out both;
+}
+
+.lc-animate-pop-card {
+  animation: lc-pop-card 0.4s cubic-bezier(0.16, 0.75, 0.3, 1) both;
+}
+
+.lc-soft-pulse-once {
+  animation: lc-soft-pulse 0.9s ease-out 0.25s 1;
+}
+
+@keyframes lc-explain-fade {
+  0% {
+    opacity: 0;
+    transform: translateY(6px);
+    filter: blur(2px);
+  }
+  60% {
+    opacity: 0.9;
+    transform: translateY(2px);
+    filter: blur(1px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+  }
+}
+
+.lc-animate-explain {
+  animation: lc-explain-fade 0.45s ease-out both;
+}
+
+@keyframes lc-explain-fade {
+  0% {
+    opacity: 0;
+    transform: translateY(6px);
+    filter: blur(2px);
+  }
+  60% {
+    opacity: 0.9;
+    transform: translateY(2px);
+    filter: blur(1px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+  }
+}
+
+.lc-animate-explain {
+  animation: lc-explain-fade 0.45s ease-out both;
+}
+
+@keyframes lcScoreRingPop {
+  0% {
+    opacity: 0;
+    transform: scale(0.85);
+  }
+  60% {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes lcScoreGlowPulse {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 0.4;
+    transform: scale(1.15);
+  }
+}
+
+@keyframes lcScoreArcSweep {
+  0% {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.lc-score-ring {
+  animation: lcScoreRingPop 0.45s cubic-bezier(0.16, 0.75, 0.3, 1) both;
+}
+
+.lc-score-glow {
+  background: radial-gradient(
+    circle,
+    rgba(79, 70, 229, 0.55),
+    transparent 60%
+  );
+  filter: blur(8px);
+  animation: lcScoreGlowPulse 0.7s ease-out 0.1s 1 forwards;
+}
+
+.lc-score-arc {
+  animation: lcScoreArcSweep 0.4s ease-out 0.1s both;
+}
+
+@keyframes lcMenuPop {
+  0% {
+    opacity: 0;
+    transform: translateY(-4px) scale(0.96);
+  }
+  60% {
+    opacity: 1;
+    transform: translateY(1px) scale(1.02);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.lc-menu-pop {
+  animation: lcMenuPop 0.25s cubic-bezier(0.2, 0.7, 0.3, 1) both;
+  transform-origin: top right;
+}
+
+@keyframes lc-fade-in {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes lc-fade-out {
+  from { opacity: 1; }
+  to   { opacity: 0; }
+}
+
+@keyframes lc-scale-in {
+  0%   { transform: scale(.92) translateY(6px); opacity: 0; }
+  100% { transform: scale(1) translateY(0);     opacity: 1; }
+}
+
+@keyframes lc-scale-out {
+  0%   { transform: scale(1) translateY(0);     opacity: 1; }
+  100% { transform: scale(.96) translateY(4px); opacity: 0; }
+}
+
+.lc-modal-overlay-in {
+  animation: lc-fade-in 0.18s ease-out forwards;
+}
+
+.lc-modal-overlay-out {
+  animation: lc-fade-out 0.18s ease-in forwards;
+}
+
+.lc-modal-card-in {
+  animation: lc-scale-in 0.22s cubic-bezier(.16,.84,.44,1) forwards;
+}
+
+.lc-modal-card-out {
+  animation: lc-scale-out 0.18s ease-in forwards;
+}
+
+@keyframes lc-fade-in-up-soft {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.lc-animate-fade-in-up-soft {
+  animation: lc-fade-in-up-soft 0.18s ease-out both;
+}
+
+.lc-summary-in {
+  animation: lcSummaryIn 220ms ease-out;
+}
+
+.lc-summary-out {
+  animation: lcSummaryOut 220ms ease-in forwards;
+}
+
+@keyframes lcSummaryIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes lcSummaryOut {
+  from {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(8px) scale(0.97);
+  }
+}
+
+.lc-history-in {
+  animation: lcHistoryIn 200ms ease-out;
+}
+
+.lc-history-out {
+  animation: lcHistoryOut 200ms ease-in forwards;
+}
+
+@keyframes lcHistoryIn {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes lcHistoryOut {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+}
